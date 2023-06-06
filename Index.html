@@ -27,6 +27,30 @@
             display: none;
         }
         
+        .menu {
+            display: none;
+            position: absolute;
+            background-color: #D1BE13;
+            width: 100%;
+            padding-top: 50px;
+        }
+        
+        .menu a {
+            display: block;
+            padding: 14px 16px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        .menu a:hover {
+            background-color: #FFFFFF;
+            color: #D1BE13;
+        }
+        
+        .show {
+            display: block;
+        }
+        
         @media screen and (max-width: 450px) {
             .navbar {
                 justify-content: flex-start;
@@ -44,27 +68,9 @@
             }
             
             .menu {
-                display: none;
-                position: absolute;
-                background-color: #D1BE13;
-                width: 100%;
-                padding-top: 50px;
-            }
-            
-            .menu a {
-                display: block;
-                padding: 14px 16px;
-                color: #FFFFFF;
-                text-decoration: none;
-            }
-            
-            .menu a:hover {
-                background-color: #FFFFFF;
-                color: #D1BE13;
-            }
-            
-            .show {
-                display: block;
+                position: static;
+                width: auto;
+                padding-top: 0;
             }
         }
     </style>
