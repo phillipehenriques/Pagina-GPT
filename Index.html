@@ -1,101 +1,41 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .navbar {
-            background-color: #D1BE13;
-            overflow: hidden;
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        .navbar a {
-            display: block;
-            color: #FFFFFF;
-            text-align: left;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        .navbar a:hover {
-            background-color: #FFFFFF;
-            color: #D1BE13;
-        }
-        
-        .menu-icon {
-            display: none;
-        }
-        
-        .menu {
-            display: none;
-            position: absolute;
-            background-color: #D1BE13;
-            width: 100%;
-            padding-top: 50px;
-        }
-        
-        .menu a {
-            display: block;
-            padding: 14px 16px;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-        
-        .menu a:hover {
-            background-color: #FFFFFF;
-            color: #D1BE13;
-        }
-        
-        .show {
-            display: block;
-        }
-        
-        @media screen and (max-width: 450px) {
-            .navbar {
-                justify-content: flex-start;
-            }
-            
-            .navbar a:not(:first-child) {
-                display: none;
-            }
-            
-            .menu-icon {
-                display: block;
-                padding: 14px 16px;
-                color: #FFFFFF;
-                cursor: pointer;
-            }
-            
-            .menu {
-                position: static;
-                width: auto;
-                padding-top: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="menu-icon">&#9776;</div>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">GALLERY</a>
-        <a href="#">INFO</a>
-        <a href="#">CONTACT US</a>
-        <div class="menu">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">GALLERY</a>
-            <a href="#">INFO</a>
-            <a href="#">CONTACT US</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CodeBank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CONTA<span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CARTÃO DE CRÉDITO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EMPRÉSTIMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INVESTIMENTOS</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
         </div>
-    </div>
+    </nav>
 
-    <script>
-        document.querySelector(".menu-icon").addEventListener("click", function() {
-            document.querySelector(".menu").classList.toggle("show");
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
